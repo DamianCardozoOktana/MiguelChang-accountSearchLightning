@@ -5,9 +5,5 @@
 	},
     clearContacts : function(component, event, helper) {
 		component.set("v.Contacts", null);
-	},
-    getContactListSize : function(component, event, helper) {
-		component.set("v.Contacts", null);
 	}
-    
 })

@@ -1,16 +1,24 @@
 <aura:component >
-    <aura:attribute name="Account" type="Account" default="null"/>
-	<lightning:card >
-        <aura:set attribute="title">
-            <lightning:icon iconName="action:new_contact" size="small" alternativeText="{!v.Account.Name}"/>{!v.Account.Name} 
-        </aura:set>
-        <aura:set attribute="actions">
-            <lightning:button label="New"/>
-        </aura:set>
-        <p class="slds-p-horizontal--small">
-            <div> FirstName: {!v.Account.FirstName} </div>
-            <div> LastName: {!v.Account.LastName}</div>
-
-        </p>
-    </lightning:card>
+    <aura:attribute name="Contact" type="Contact" default="null"/>
+	<div class="slds-p-horizontal_medium slds-size_1-of-3">
+        <lightning:tile label="{!v.Contact.Name}" href="{!v.Contact.Id}">
+            <aura:set attribute="media">
+                <lightning:icon iconName="action:new_contact" size="x-small"/>
+            </aura:set>
+            <dl class="slds-dl--horizontal">
+                <dt class="slds-dl--horizontal__label">
+                    <p class="slds-truncate" title="FirstName">FirstName:</p>
+                </dt>
+                <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                    <p class="slds-truncate" title="{!v.Contact.FirstName}">{!v.Contact.FirstName}</p>
+                </dd>
+                <dt class="slds-dl--horizontal__label">
+                    <p class="slds-truncate" title="LastName">LastName:</p>
+                </dt>
+                <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                    <p class="slds-truncate" title="{!v.Contact.LastName}">{!v.Contact.LastName}</p>
+                </dd>
+            </dl>
+        </lightning:tile>
+    </div>
 </aura:component>
