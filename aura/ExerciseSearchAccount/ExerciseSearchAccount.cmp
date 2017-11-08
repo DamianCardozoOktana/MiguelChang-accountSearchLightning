@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="ExerciseController">
+    
+    <aura:handler event="c:textEntered" action="{!c.handletextEntered}"/>
+    <aura:attribute name="Accounts" type="Account[]" default="null"/>
+
+    <c:ExerciseSearchBox />
+    <br/>
+    <div class="slds-box">
+    	<c:ExerciseAccountTable Accounts="{!v.Accounts}"/>
+    </div>
+
+</aura:component>

@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="Account" type="Account" default="null"/>
+	<lightning:card >
+        <aura:set attribute="title">
+            <lightning:icon iconName="action:new_contact" size="small" alternativeText="{!v.Account.Name}"/>{!v.Account.Name} 
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+        <p class="slds-p-horizontal--small">
+            <div> FirstName: {!v.Account.FirstName} </div>
+            <div> LastName: {!v.Account.LastName}</div>
+
+        </p>
+    </lightning:card>
+</aura:component>

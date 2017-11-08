@@ -1,0 +1,13 @@
+<aura:component controller="CampingItemHandler">
+	<aura:attribute name="CampingItems" type="Camping_Item__c[]"/>
+   
+
+    <h1 class="slds-text-heading--medium">List of Camping Items</h1>
+
+    <aura:iteration var="Item" items="{!v.CampingItems}" >
+        <c:item campingItem="{!Item}"></c:item>
+    </aura:iteration>
+
+
+   <!--   <ui:button label="Get Opportunities" press="{!c.getCampingItems}"/>-->
+</aura:component>

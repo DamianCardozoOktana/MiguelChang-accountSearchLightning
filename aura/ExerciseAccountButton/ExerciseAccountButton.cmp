@@ -1,0 +1,7 @@
+<aura:component >
+	<aura:registerEvent name="ExerciseAccountSelected" type="c:ExerciseAccountSelected"/>
+    <aura:attribute name="AccountId" type="String"/>
+    <aura:attribute name="Name" type="String"/>
+    <lightning:button variant="none" label="{!v.Name}" onclick="{! c.handleClick }" />
+    
+</aura:component>
