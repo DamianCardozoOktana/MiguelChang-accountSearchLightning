@@ -4,7 +4,12 @@
     	<c:ExerciseSearchAccount />
     </div>
     
-    <div class="slds-box">
+    <div class="slds-box ContactBox">
     	<c:ExerciseContactTable />
+    </div>
+    
+        
+    <div class="slds-box ">
+    	<c:ExerciseApiCall />
     </div>
 </aura:component>

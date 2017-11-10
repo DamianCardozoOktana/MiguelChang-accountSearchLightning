@@ -4,7 +4,6 @@
 	 <tr>
       <td data-label="Account Name">
           <c:ExerciseAccountButton AccountId="{!v.Account.Id}" Name="{!v.Account.Name}"/>
-       <!-- <div class="slds-truncate" title="{!v.Account.Name}">{!v.Account.Name}</div> -->
       </td>
       <td data-label="Account Site">
         <div class="slds-truncate" title="{!v.Account.Site}">{!v.Account.Site}</div>

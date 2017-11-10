@@ -8,5 +8,4 @@
     <div class="slds-box">
     	<c:ExerciseAccountTable Accounts="{!v.Accounts}"/>
     </div>
-
 </aura:component>

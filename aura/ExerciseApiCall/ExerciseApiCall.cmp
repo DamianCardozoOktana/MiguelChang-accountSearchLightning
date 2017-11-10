@@ -10,7 +10,7 @@
          </div>
       </div>
       <!--Header part close-->
-      <h3 class="slds-section-title--divider"> Response : {! v.mydata }</h3>
+      <h3 id="response" class="slds-section-title--divider"> Response : {! v.mydata }</h3>
 
        
    </div>
