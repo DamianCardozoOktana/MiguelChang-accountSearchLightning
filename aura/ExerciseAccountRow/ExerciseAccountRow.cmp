@@ -1,7 +1,6 @@
 <aura:component >
-    
-     <aura:attribute name="Account" type="Account"/>
-	 <tr>
+      <aura:attribute name="Account" type="Account"/>
+	    <tr>
       <td data-label="Account Name">
           <c:ExerciseAccountButton AccountId="{!v.Account.Id}" Name="{!v.Account.Name}"/>
       </td>
@@ -17,5 +16,5 @@
       <td data-label="Type">
         <div class="slds-truncate" title="{!v.Account.Type}">{!v.Account.Type}</div>
       </td>
-    </tr>
+      </tr>
 </aura:component>

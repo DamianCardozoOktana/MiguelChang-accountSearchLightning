@@ -1,6 +1,5 @@
 ({
 	getContacts : function(component,AccountId) {
-		var self = this;
         var action = component.get("c.getContacts");        
         action.setParams({"AccountId": AccountId});
         action.setCallback(this, function(response){
@@ -13,6 +12,6 @@
                 console.log(response.getError());
             }
     	});
-    	$A.enqueueAction(action);   
+    	$A.enqueueAction(action);
 	}
 })

@@ -1,6 +1,5 @@
 ({
 	getAccounts : function(component,searchText) {
-		var self = this;
         var action = component.get("c.getAccounts");        
         action.setParams({"searchText": searchText});
         action.setCallback(this, function(response){
@@ -12,7 +11,7 @@
                 console.log(response.getError());
             }
     	});
-    	$A.enqueueAction(action);   
+    	$A.enqueueAction(action);
 
 	}
 })
