@@ -1,17 +1,15 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="ExerciseController" access="global" >
-
-   <aura:attribute name="mydata" type="String"/>
-   <div class="slds-m-around--medium">
-      <!--Header part-->
-      <div class="slds-page-header" role="banner">
-         <div class="slds-media__body">
-            <p class="slds-page-header__title slds-truncate" title="Call external api">Call external api</p>
-            <button class="slds-button slds-button--brand" onclick="{!c.calloutCtrl}">Make CallOut</button>  
-         </div>
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="ExerciseController" access="global">
+  <aura:attribute name="mydata" type="String"/>
+  <div class="slds-m-around--medium">
+    <!--Header part-->
+    <div class="slds-page-header" role="banner">
+      <div class="slds-media__body">
+        <p class="slds-page-header__title slds-truncate" title="Call external api">Call external api</p>
+        <button class="slds-button slds-button--brand" onclick="{!c.calloutCtrl}">Make CallOut</button>
       </div>
-      <!--Header part close-->
-      <h3 id="response" class="slds-section-title--divider"> Response : {! v.mydata }</h3>
-
-       
-   </div>
+    </div>
+    <!--Header part close-->
+    <h3 id="response" class="slds-section-title--divider">
+      Response : {! v.mydata }</h3>
+  </div>
 </aura:component>

@@ -1,32 +1,31 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
   <aura:attribute name="Accounts" type="Account[]" default="null"/>
- <fieldset>	
-  <table class="slds-table slds-table_bordered slds-table_cell-buffer">
-  <thead>
-    <tr class="slds-text-title_caps">
-      <th scope="col">
-        <div class="slds-truncate" title="Account Name">Account Name</div>
-      </th>
-      <th scope="col">
-        <div class="slds-truncate" title="Account Site">Account Site</div>
-      </th>
-      <th scope="col">
-          <div class="slds-truncate" title="Billing State/ Province">Billing State/ Province</div>
-      </th>
-      <th scope="col">
-        <div class="slds-truncate" title="Phone">Phone</div>
-      </th>
-      <th scope="col">
-        <div class="slds-truncate" title="Type">Type</div>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-      
-      <aura:iteration items="{!v.Accounts}" var="Account">
-      		<c:ExerciseAccountRow Account="{!Account}"/>
-      </aura:iteration>
-  </tbody>
-</table>
-    </fieldset>	    
+  <fieldset>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+      <thead>
+        <tr class="slds-text-title_caps">
+          <th scope="col">
+            <div class="slds-truncate" title="Account Name">Account Name</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Account Site">Account Site</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Billing State/ Province">Billing State/ Province</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Phone">Phone</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Type">Type</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <aura:iteration items="{!v.Accounts}" var="Account">
+          <c:ExerciseAccountRow Account="{!Account}"/>
+        </aura:iteration>
+      </tbody>
+    </table>
+  </fieldset>
 </aura:component>
