@@ -1,11 +1,12 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-	<div class="slds-box">
-    	<c:ExerciseSearchAccount />
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <div class="slds-box">
+        <c:ExerciseSearchAccount />
     </div>
     <div class="slds-box ContactBox">
-    	<c:ExerciseContactTable />
+        <c:ExerciseContactTable />
     </div>
     <div class="slds-box ">
-    	<c:ExerciseApiCall />
+        <c:ExerciseApiCall />
     </div>
 </aura:component>

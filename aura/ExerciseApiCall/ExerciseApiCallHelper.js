@@ -1,7 +1,7 @@
 ({
-  getApiResponse: function(component, url) {
+  getApiResponse: function (component, url) {
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         component.set("v.mydata", JSON.stringify(this.responseText));
       }

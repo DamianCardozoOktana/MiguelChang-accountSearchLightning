@@ -1,10 +1,10 @@
 ({
-  getContacts: function(component, AccountId) {
+  getContacts: function (component, AccountId) {
     var action = component.get("c.getContacts");
     action.setParams({
       "AccountId": AccountId
     });
-    action.setCallback(this, function(response) {
+    action.setCallback(this, function (response) {
       var state = response.getState();
       if (component.isValid() && state === "SUCCESS") {
         console.log(response.getReturnValue());
