@@ -1,0 +1,22 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global" controller="ExerciseController">
+	<aura:handler event="c:ExerciseAccountSelected" action="{!c.fillContacts}" />
+	<aura:handler event="c:textEntered" action="{!c.clearContacts}" />
+	<aura:attribute name="Contacts" type="Contact[]" default="null" />
+	<lightning:card class="ContactBoxColor">
+		<aura:set attribute="title">
+			<lightning:icon iconName="standard:contact" size="medium" alternativeText="Contacts" />
+			<span class="slds-text-title contactTextTitle">
+				Contacts ({!v.Contacts.length})
+			</span>
+		</aura:set>
+		<aura:set attribute="actions">
+			<lightning:button label="New" />
+		</aura:set>
+		<div class="slds-grid slds-wrap">
+			<aura:iteration items="{!v.Contacts}" var="Contact">
+				<c:ExerciseContactCard Contact="{!Contact}" />
+			</aura:iteration>
+		</div>
+	</lightning:card>
+</aura:component>
