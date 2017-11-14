@@ -1,20 +1,20 @@
 <aura:component >
       <aura:attribute name="Account" type="Account"/>
 	    <tr>
-      <td data-label="Account Name">
-          <c:ExerciseAccountButton AccountId="{!v.Account.Id}" Name="{!v.Account.Name}"/>
-      </td>
-      <td data-label="Account Site">
-        <div class="slds-truncate" title="{!v.Account.Site}">{!v.Account.Site}</div>
-      </td>
-      <td data-label="Billing State/ Province">
-        <div class="slds-truncate" title="{!v.Account.BillingCity}">{!v.Account.BillingCity}</div>
-      </td>
-      <td data-label="Phone">
-        <div class="slds-truncate" title="{!v.Account.Phone}">{!v.Account.Phone}</div>
-      </td>
-      <td data-label="Type">
-        <div class="slds-truncate" title="{!v.Account.Type}">{!v.Account.Type}</div>
-      </td>
+        <td data-label="Account Name">
+            <c:ExerciseAccountButton AccountId="{!v.Account.Id}" Name="{!v.Account.Name}"/>
+        </td>
+        <td data-label="Account Site">
+          <div class="slds-truncate" title="{!v.Account.Site}">{!v.Account.Site}</div>
+        </td>
+        <td data-label="Billing State/ Province">
+          <div class="slds-truncate" title="{!v.Account.BillingCity}">{!v.Account.BillingCity}</div>
+        </td>
+        <td data-label="Phone">
+          <div class="slds-truncate" title="{!v.Account.Phone}">{!v.Account.Phone}</div>
+        </td>
+        <td data-label="Type">
+          <div class="slds-truncate" title="{!v.Account.Type}">{!v.Account.Type}</div>
+        </td>
       </tr>
 </aura:component>
